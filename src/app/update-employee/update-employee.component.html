@@ -1,0 +1,13 @@
+ <div *ngIf="errorMessage == null">
+      <form (ngSubmit)="update()">
+        <input type="text" required name="firstName" value="emmployee.firstName" [(ngModel)]="employee.firstName">
+        <input type="text" required name="lastName" value="emmployee.lastName" [(ngModel)]="employee.lastName">
+        <input type="text" required name="emailId" value="emmployee.emailId" [(ngModel)]="employee.emailId">
+       
+        <button class="btn btn-success" type="submit">Update</button>
+      </form>
+  </div>
+
+<p *ngIf="errorMessage !=null">
+    {{message}}
+</p>

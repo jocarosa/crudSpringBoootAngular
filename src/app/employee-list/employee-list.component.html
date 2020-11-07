@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let employee of employees | async">
+      {{employee.firstName}} <button class="btn btn-success" (click)="employeeDetails(employee.id)">details</button>
+      <button class="btn btn-danger" (click)="deleteEmployee(employee.id)">X</button>
+     
+  </li>
+</ul>
