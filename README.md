@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
-This project is a sample CRUD of Employees using Angular 8. We used SpringBoot in the backend and JPA for persistence.
+This project is a sample CRUD of Employees using Angular 8. We used a SpringBoot Service and JPA.
 
 # Angular Features
 
