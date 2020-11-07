@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This project is a sample CRUD using Angular 8, Spring Boot, JPA
 
-# Angular Features implemented:
+# Angular Features
 
 * Http Module
 * Observables
@@ -12,6 +12,6 @@ This project is a sample CRUD using Angular 8, Spring Boot, JPA
 * Routes
 * DI with services
 
-# Design Features implemented
+# Design Features
 
 * bootstrap
