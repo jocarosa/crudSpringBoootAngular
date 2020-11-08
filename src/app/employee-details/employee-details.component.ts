@@ -15,6 +15,8 @@ export class EmployeeDetailsComponent implements OnInit {
 
   employee: Observable<Employee>
   id:number;
+  dataSource  =[];
+  displayedColumns: string[];
 
   ngOnInit() {
     this.id = this.route.snapshot.params["id"];
@@ -24,6 +26,8 @@ export class EmployeeDetailsComponent implements OnInit {
   getEmployeeDetails(id:number){
     this.employeeService.getEmployeeDetails(id).subscribe(data=>{
       this.employee = data;
+        this.displayedColumns= ['firstName','lastName','emailId',"actions"];
+        this.dataSource.push({"firstName":data.firstName,"lastName":data.lastName,"emailId":data.emailId,"id":data.id});
     },error=>{console.log(error)});
   }
 

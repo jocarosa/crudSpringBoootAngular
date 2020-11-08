@@ -1,5 +1,5 @@
 <div *ngIf="!submitted">
-  <form (ngSubmit)="onSubmit()">
+  <form ngNativeValidate (ngSubmit)="onSubmit()">
 
       <div class="form-group">
           <label for="name">First Name</label>

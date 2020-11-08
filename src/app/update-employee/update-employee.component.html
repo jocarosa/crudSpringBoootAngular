@@ -1,5 +1,5 @@
  <div *ngIf="errorMessage == null">
-      <form (ngSubmit)="update()">
+      <form ngNativeValidate (ngSubmit)="update()">
         <input type="text" required name="firstName" value="emmployee.firstName" [(ngModel)]="employee.firstName">
         <input type="text" required name="lastName" value="emmployee.lastName" [(ngModel)]="employee.lastName">
         <input type="text" required name="emailId" value="emmployee.emailId" [(ngModel)]="employee.emailId">
