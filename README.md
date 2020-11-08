@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
-This project is a sample CRUD of Employees using Angular 8. We used a SpringBoot Service with H2 DB.
+This project is a sample CRUD of Employees using Angular 8. I used a SpringBoot Service with H2 DB.
 
 # Angular Features
 
