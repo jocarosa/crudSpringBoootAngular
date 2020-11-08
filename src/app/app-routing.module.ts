@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
-import { CreateEmployeeComponent } from './create-employee/create-employee.component';
-import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 const routes: Routes = [
-  {path:"",redirectTo:"employee",pathMatch:"full"},
-  {path:'employees', component: EmployeeListComponent},
-  {path:'add',component:CreateEmployeeComponent},
-  {path:'update/:id', component:UpdateEmployeeComponent},
-  {path:'details/:id',component: EmployeeDetailsComponent}
+  {path:"",redirectTo:"employees",pathMatch:"full"},
+  {path:'employees',loadChildren:()=> import('./employee-list/employeeList.module').then(m=>m.EmployeeListModule)},
+  {path:'add',loadChildren:()=> import('./create-employee/createEmployeeModule.module').then(m=>m.CreateEmployeeModule)},
+  {path:'update/:id',loadChildren:()=> import('./update-employee/updateEmployeeModule.module').then(m=>m.UpdateEmployeeModule)},
+  {path:'details/:id',loadChildren:()=> import('./employee-details/detailsEmployeeModule.module').then(m=>m.DetailsEmployeeModule)},
 ];
 
 @NgModule({

@@ -2,16 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
-This project is a sample CRUD of Employees using Angular 8. We used a SpringBoot Service and JPA.
+This project is a sample CRUD of Employees using Angular 8. We used a SpringBoot Service with H2 DB.
 
 # Angular Features
 
-* Http Module
-* Observables
+* Http Module with Observables
 * Forms
-* Routes
+* Routes with lazy loading
 * DI with services
 
 # Design Features
 
-* bootstrap
+* Bootstrap
+* Angular Material UI

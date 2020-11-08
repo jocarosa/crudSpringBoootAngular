@@ -12,8 +12,10 @@ import { Router } from '@angular/router';
 export class CreateEmployeeComponent implements OnInit {
 
   constructor(public employeeService: EmployeeService,public router:Router) { }
+  
   employee:Employee = new Employee();
   submitted:boolean;
+
   ngOnInit() {
     this.submitted =false;
   }
