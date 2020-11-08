@@ -12,6 +12,8 @@ import { Router } from '@angular/router';
 export class EmployeeListComponent implements OnInit {
 
 employees: Observable<Employee[]>;
+dataSource  =[];
+displayedColumns: string[];
 
   constructor(private employeeService:EmployeeService, private router:Router) { }
 
@@ -20,7 +22,15 @@ employees: Observable<Employee[]>;
   }
 
   reloadData(){
+     
       this.employees = this.employeeService.getEmployeesList();
+      this.employees.subscribe(data=>{
+        this.dataSource=[];
+        data.forEach(employeeObj=>{
+          this.displayedColumns= ['firstName',"actions"];
+          this.dataSource.push({"firstName":employeeObj.firstName,"id":employeeObj.id});
+        })
+      });      
   }
 
   deleteEmployee(id:number){

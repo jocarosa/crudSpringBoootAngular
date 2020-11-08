@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
-This project is a sample CRUD of Employees using Angular 8. For the backend I used a SpringBoot Service with H2 DB.
+This project is a sample CRUD of Employees using Angular 7. For the backend I used a SpringBoot Service with H2 DB.
 
 # Angular Features
 
@@ -14,4 +14,4 @@ This project is a sample CRUD of Employees using Angular 8. For the backend I us
 # Design Features
 
 * Bootstrap
-* Angular Material UI
+* Angular Material UI V 7.0.0
